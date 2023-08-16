@@ -41,7 +41,7 @@ public class NewTest {
 	//  co.addArguments("--incognito");
 	  chrome_options.add_argument("--no-sandbox")
 //chrome_options.add_argument("--headless")
-chrome_options.add_argument("--disable-gpu")
+//chrome_options.add_argument("--disable-gpu")
 	 ChromeDriver d = new ChromeDriver(co);
 	  setdriver(d);Thread.sleep(15000);
 	  getdriver().manage().window().maximize(); 
