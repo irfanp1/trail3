@@ -29,7 +29,8 @@ public class NewTest {
   @Test
   public void a() throws InterruptedException, MalformedURLException {
 	  System.out.println("bfvhs111111111111111");
-	 WebDriverManager.chromedriver().setup();
+	   System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+//	 WebDriverManager.chromedriver().setup();
 //	  DesiredCapabilities cap = new DesiredCapabilities();
 //		 cap.setCapability("browserName", "chrome");
 //		WebDriver d=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
