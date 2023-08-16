@@ -37,8 +37,11 @@ public class NewTest {
 //		WebDriver d=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		// WebDriver d=new RemoteWebDriver(new URL("http://54.237.37.87:4444/wd/hub"),cap);
 	  ChromeOptions co=new ChromeOptions();
-	  co.addArguments("--remote-allow-origins=*");
-	  co.addArguments("--incognito");
+	//  co.addArguments("--remote-allow-origins=*");
+	//  co.addArguments("--incognito");
+	  chrome_options.add_argument("--no-sandbox")
+//chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-gpu")
 	 ChromeDriver d = new ChromeDriver(co);
 	  setdriver(d);Thread.sleep(15000);
 	  getdriver().manage().window().maximize(); 
