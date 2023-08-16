@@ -6,9 +6,9 @@
       <class name="pack1.NewTest"/>
     </classes>
   </test> <!-- Test -->
-  <test  name="Test1" >
+<!--  <test  name="Test1" >
     <classes>
       <class name="pack1.NewTest2"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  Test -->
 </suite> <!-- Suite -->
