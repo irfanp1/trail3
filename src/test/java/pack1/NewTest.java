@@ -40,6 +40,7 @@ public class NewTest {
 	//  co.addArguments("--remote-allow-origins=*");
 	//  co.addArguments("--incognito");
 	  co.addArguments("--no-sandbox");
+	   co.addArguments("--disable-dev-shm-usage");
 //chrome_options.add_argument("--headless")
 //chrome_options.add_argument("--disable-gpu")
 	 ChromeDriver d = new ChromeDriver(co);
