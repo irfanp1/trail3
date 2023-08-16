@@ -39,7 +39,7 @@ public class NewTest {
 	  ChromeOptions co=new ChromeOptions();
 	//  co.addArguments("--remote-allow-origins=*");
 	//  co.addArguments("--incognito");
-	//  chrome_options.add_argument("--no-sandbox")
+	  chrome_options.add_argument("--no-sandbox");
 //chrome_options.add_argument("--headless")
 //chrome_options.add_argument("--disable-gpu")
 	 ChromeDriver d = new ChromeDriver(co);
