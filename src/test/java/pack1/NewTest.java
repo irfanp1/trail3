@@ -29,7 +29,7 @@ public class NewTest {
   @Test
   public void a() throws InterruptedException, MalformedURLException {
 	  System.out.println("bfvhs111111111111111");
-	  System.setProperty("webdriver.chrome.driver", "/usr/local/chromedriver");
+	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	//   System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 //	 WebDriverManager.chromedriver().setup();
 //	  DesiredCapabilities cap = new DesiredCapabilities();
