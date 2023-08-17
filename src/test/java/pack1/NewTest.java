@@ -29,21 +29,22 @@ public class NewTest {
   @Test
   public void a() throws InterruptedException, MalformedURLException {
 	  System.out.println("bfvhs111111111111111");
-	  System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+	//  System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 	//   System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-//	 WebDriverManager.chromedriver().setup();
-//	  DesiredCapabilities cap = new DesiredCapabilities();
-//		 cap.setCapability("browserName", "chrome");
+	 WebDriverManager.chromedriver().setup();
+	  DesiredCapabilities cap = new DesiredCapabilities();
+		 cap.setCapability("browserName", "chrome");
+	  WebDriver d=new RemoteWebDriver(new URL("http://54.88.29.155:4444/wd/hub"),cap);
 //		WebDriver d=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
-		// WebDriver d=new RemoteWebDriver(new URL("http://54.237.37.87:4444/wd/hub"),cap);
-	  ChromeOptions co=new ChromeOptions();
+		
+	//  ChromeOptions co=new ChromeOptions();
 	//  co.addArguments("--remote-allow-origins=*");
 	//  co.addArguments("--incognito");
-	  co.addArguments("--no-sandbox");
-	   co.addArguments("--disable-dev-shm-usage");
+	//  co.addArguments("--no-sandbox");
+	//   co.addArguments("--disable-dev-shm-usage");
 //chrome_options.add_argument("--headless")
 //chrome_options.add_argument("--disable-gpu")
-	 ChromeDriver d = new ChromeDriver(co);
+	// ChromeDriver d = new ChromeDriver(co);
 	  setdriver(d);Thread.sleep(15000);
 	  getdriver().manage().window().maximize(); 
 	  getdriver().get("https://www.facebook.com/");
